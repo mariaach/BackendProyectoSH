@@ -1,0 +1,7 @@
+"id_masc","nombre_masc","especie","raza","edad_masc","estado","descripcion","foto_masc"
+2,Luna,Perro,Labrador,5,Disponible,Feliz y amigable,http://localhost:3000/fotos/luna.jpg
+4,Frodo,Perro,Criolla,1,Disponible,cachorro café,http://localhost:3000/fotos/frodo.jpg
+5,Toby,Perro,Criolla,8,Disponible,En silla de ruedas,http://localhost:3000/fotos/tobby.jpg
+6,Pluto,Perro,Criolla,4,Disponible,"",http://localhost:3000/fotos/pluto.jpg
+7,Max,Perro,Golden,3,Disponible,Juguetón,http://localhost:3000/fotos/max.jpg
+13,Venus,Gato,Criolla,8,Adoptado,Dormilona,http://localhost:3000/fotos/Venus.jpeg
