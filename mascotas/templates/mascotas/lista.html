@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Lista de Mascotas</h1>
+<a href="{% url 'crear_mascota' %}" class="btn btn-primary">Nueva Mascota</a>
+<table class="table">
+    <thead>
+        <tr>
+        <th>Id</th>
+         <th>Nombre</th>
+         <th>Especie</th>
+         <th>Raza</th>
+         <th>Edad</th>
+         <th>Estado</th>
+         <th>Descripcion</th>
+         <th>Foto</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for mascota in mascotas %}
+        <tr>
+         <td>{{ mascota.id_masc }}</td>
+         <td>{{ mascota.nombre_masc }}</td>
+         <td>{{ mascota.get_especie_display }}</td>
+         <td>{{ mascota.raza|default:"-" }}</td>
+         <td>{{ mascota.edad_masc }}</td>
+         <td>{{ mascota.get_estado_display }}</td>
+         <td>{{ mascota.descripcion }}</td>
+         <td>{{ mascota.foto_masc }}</td>
+         <td>
+             <a href="{% url 'editar_mascota' mascota.id_masc %}">Editar</a>
+             <a href="{% url 'eliminar_mascota' mascota.id_masc %}">Eliminar</a>
+         </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

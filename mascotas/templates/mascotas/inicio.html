@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Bienvenido al Sistema de Mascotas</h1>
+<a href="{% url 'lista_mascotas' %}" class="btn btn-primary">Ver Mascotas</a>
+<a href="/admin/" class="btn btn-secondary">Administración</a>
+{% endblock %}
