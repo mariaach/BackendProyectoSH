@@ -1,0 +1,22 @@
+{% extends "admin/base_site.html" %}
+
+
+{% load static %}
+
+{% block title %} Salvando Huellas {% endblock %}
+
+{% block branding %}
+<div id="site-name">
+    <img src="{% static 'img/Logo.jpg' %}" alt="Logo" style="height:120px; vertical-align:middle;">
+    <span style="font-size:30px; font-weight:bold; margin-left:10px;">
+        Administración Fundación Salvando Huellas
+    </span>
+</div>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+{% block extrahead %}
+    {{ block.super }}
+    <link rel="icon" href="{% static 'img/Logo.ico' %}" type="image/x-icon">
+{% endblock %}

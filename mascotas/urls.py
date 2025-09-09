@@ -1,5 +1,4 @@
 from django.urls import path
-from django.contrib import admin
 
 from . import views
 
@@ -12,9 +11,3 @@ urlpatterns = [
     path('editar/<int:pk>/', views.editar_mascota, name='editar_mascota'),
     path('eliminar/<int:pk>/', views.eliminar_mascota, name='eliminar_mascota'),
 ]
-
-
-# Cambiar los textos del admin
-admin.site.site_header = "Administración de Mascotas Fundación Salvando Huellas"
-admin.site.site_title = "Panel de Mascotas"
-admin.site.index_title = "Bienvenido al portal de gestión"
